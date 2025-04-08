@@ -1,1 +1,73 @@
-# abutTrainBuilder.github.io
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Train Builder</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Train Builderさんに関するサイト</h1>
+  </header>
+
+  <nav>
+    <a href="#about">Train builderさんについて</a>
+    <a href="#map">路線図</a>
+    <a href="#topics">豆知識</a>
+  </nav>
+
+  <hr />
+
+  <main>
+    <div class="content">
+      <section id="about">
+
+        <h2>Train builderさんについて</h2>
+        <p>​Train Builderさんは、マインクラフトの世界で鉄道やインフラを構築し、その過程をYouTubeで紹介されている方です。<br>2022年8月ごろから鉄道作りの動画を投稿し始め、約2週間に1本のペースで動画を投稿されています。</p>
+      </section>
+
+      <section id="map">
+        <h2>路線図</h2>
+        <h3>環状高速鉄道</h3>
+        <div id="station-map-container">
+          <canvas id="circle-line" width="700" height="700"></canvas>
+          <div id="station-list"></div>
+        </div>
+      </section>
+
+      <section id="topics">
+        <h2>豆知識</h2>
+        <p>実は少し前のワールドデータが<a href="https://torebiru.com/">ここ</a>で共有されている。
+      </section>
+    </div>
+
+    <div class="sidebar">
+      <h3>最新のポスト(テスト中)</h3>
+      <!-- ここにポスト表示コード -->
+    </div>
+  </main>
+
+  <footer>
+    &copy; Copy right. 2025 Website creation for Trainbuilder Project.
+  </footer>
+
+  <div id="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h2 id="station-name"></h2>
+      <img id="station-image" src="" alt="駅の画像" style="width: 100%; max-height: 300px; object-fit: cover;" />
+      <p id="station-info"></p>
+      <p><strong>乗換路線案内：</strong><span id="station-transfer"></span></p>
+      <p><strong>参考：</strong><span id="station-reference"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
